@@ -1,16 +1,45 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SNewsPrototype2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+    <style name="Theme_SNewsPrototype2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Default Background Colour -->
+        <item name="colorPrimary">@color/grey</item>
+        <!-- Default Text Colour -->
+        <item name="android:textColorPrimary">@color/grey</item>
+        <!-- Top Bar Accent Colour -->
+        <item name="colorPrimaryVariant">@color/orange</item>
+        <!-- Default Colour for Objects on top of Default Background -->
+        <item name="colorOnPrimary">@color/grey</item>
+
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/teal</item>
+        <item name="colorSecondaryVariant">@color/teal</item>
+        <item name="colorOnSecondary">@color/teal</item>
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <!-- Overflow icon -->
+        <item name="actionOverflowButtonStyle">@style/CustomOverflowButton</item>
     </style>
+
+    <!-- Define Overflow Button -->
+    <style name="CustomOverflowButton" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/settings_icon</item>
+    </style>
+
+    <!-- Text Colour -->
+    <style name="TEXT">
+        <item name = "android:textColor">@color/black</item>
+    </style>
+
+    <!-- BACKGROUND Colour -->
+    <style name="BACKGROUND">
+        <item name = "android:background">@color/off_white</item>
+    </style>
+
+    <!-- Options Menu Colour -->
+    <style name="MENU">
+        <item name = "android:background">@color/orange</item>
+    </style>
+
 </resources>

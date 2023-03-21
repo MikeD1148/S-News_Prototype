@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    style="@style/BACKGROUND">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/FirstImage"
@@ -35,7 +36,8 @@
         android:layout_marginTop="25dp"
         android:maxLines="2"
         android:text="This is a very long title to test that it will overflow nicely without hitting the date"
-        android:textColor="#000000"
+        style="@style/TEXT"
+        android:fontFamily="@font/nemesisgrant"
         android:textSize="12sp"
         app:layout_constraintWidth_max="0dp"
         app:layout_constraintHorizontal_bias="0"
@@ -50,6 +52,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="5dp"
         android:text="11/12/25"
+        style="@style/TEXT"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/FirstImage"
@@ -63,6 +66,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:text="A feel good story"
+        style="@style/TEXT"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
