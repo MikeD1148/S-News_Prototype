@@ -38,12 +38,43 @@ public class MainActivity extends MenuConstant {
     LinearLayoutManager layoutManager;
     List<ViewStructure> articleList;
     Adapter adapter;
+    SharedPreferences sharedPreferences;
+    boolean Grumpy;
+    boolean Happy;
+    boolean Glad;
+    boolean Mad;
+    boolean Nosey;
+    boolean Joy;
+    boolean Bashful;
+    boolean Smurf;
+    boolean Horror;
+    boolean Confusion;
+    boolean Relief;
+    boolean Fear;
+    boolean Awe;
+    boolean Pain;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
+        Grumpy = sharedPreferences.getBoolean("grumpyValue", false);
+        Happy = sharedPreferences.getBoolean("happyValue", false);
+        Glad = sharedPreferences.getBoolean("gladValue", false);
+        Mad = sharedPreferences.getBoolean("madValue", false);
+        Nosey = sharedPreferences.getBoolean("noseyValue", false);
+        Joy = sharedPreferences.getBoolean("joyValue", false);
+        Bashful = sharedPreferences.getBoolean("bashfulValue", false);
+        Smurf = sharedPreferences.getBoolean("smurfValue", false);
+        Horror = sharedPreferences.getBoolean("horrorValue", false);
+        Confusion = sharedPreferences.getBoolean("confusionValue", false);
+        Relief = sharedPreferences.getBoolean("reliefValue", false);
+        Fear = sharedPreferences.getBoolean("fearValue", false);
+        Awe = sharedPreferences.getBoolean("aweValue", false);
+        Pain = sharedPreferences.getBoolean("painValue", false);
 
         initData();
         initRecyclerView();
@@ -62,7 +93,49 @@ public class MainActivity extends MenuConstant {
                 String date = nextLine[2];
                 String description = nextLine[3];
                 String articleUrl = nextLine[4];
-                articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+
+                if (Grumpy && description.equals("Grumpy")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Happy && description.equals("Happy")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Glad && description.equals("Glad")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Mad && description.equals("Mad")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Nosey && description.equals("Nosey")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Joy && description.equals("Joy")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Bashful && description.equals("Bashful")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Smurf && description.equals("Smurf")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Horror && description.equals("Horror")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Confusion && description.equals("Confusion")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Relief && description.equals("Relief")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Fear && description.equals("Fear")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Awe && description.equals("Awe")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
+                if (Pain && description.equals("Pain")) {
+                    articleList.add(new ViewStructure(url, title, date, description, articleUrl));
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
