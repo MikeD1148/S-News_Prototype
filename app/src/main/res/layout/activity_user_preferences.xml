@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPreferences"
+    style="@style/BACKGROUND">
+
+    <Switch
+        android:id="@+id/Grumpy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/swanseabold"
+        android:textSize="22sp"
+        android:text="Grumpy"
+        style="@style/TEXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Grumpy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Happy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Happy"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Grumpy" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Happy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Glad"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Glad"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Happy" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Glad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Mad"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Mad"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Glad" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Mad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Nosey"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Nosey"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mad" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Nosey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Joy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Joy"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nosey" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Joy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Bashful"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Bashful"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Joy" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Bashful"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Smurf"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Smurf"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bashful" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Smurf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Horror"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Horror"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Smurf" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Horror"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Confusion"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Confusion"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Horror" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Confusion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Relief"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Relief"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Confusion" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Relief"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Fear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Fear"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Relief" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Fear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Awe"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Awe"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fear" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Awe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/Pain"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:text="Pain"
+        style="@style/TEXT"
+        android:fontFamily="@font/swanseabold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Awe" />
+
+    <View
+        style="@style/LINE"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Pain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,6 +16,11 @@
         <item name="colorSecondaryVariant">@color/teal</item>
         <item name="colorOnSecondary">@color/teal</item>
 
+        <!-- Switch Colour -->
+        <item name="colorControlActivated">@color/orange</item>
+        <item name="colorSwitchThumbNormal">@color/orange</item>
+        <item name="android:colorForeground">@color/orange</item>
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Overflow icon -->
@@ -32,9 +37,14 @@
         <item name = "android:textColor">@color/black</item>
     </style>
 
-    <!-- BACKGROUND Colour -->
+    <!-- Background Colour -->
     <style name="BACKGROUND">
         <item name = "android:background">@color/off_white</item>
+    </style>
+
+    <!-- Line Colour -->
+    <style name="LINE">
+        <item name = "android:background">@color/black</item>
     </style>
 
     <!-- Options Menu Colour -->
