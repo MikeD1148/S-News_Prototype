@@ -2,15 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Home Icon -->
     <item android:id="@+id/home"
         app:showAsAction="ifRoom"
         android:icon="@drawable/baseline_home_24"
         android:title="Home"/>
 
+    <!-- Refresh Icon -->
+    <item android:id="@+id/refresh"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_refresh_24"
+        android:title="Home"/>
+
+    <!-- Change the Theme from Light to Dark -->
     <item android:id="@+id/preference1"
         app:showAsAction="never"
         android:title="Change Theme"/>
 
+    <!-- Access the Article Preferences Menu -->
     <item android:id="@+id/preference2"
         app:showAsAction="never"
         android:title="Article Preferences" />

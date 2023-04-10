@@ -21,6 +21,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
     public Adapter (List<ViewStructure>articleList){this.articleList=articleList;}
 
+    //Create a new object View Holder object using the design from the item_design layout file for the Recycled View
     @NonNull
     @Override
     public Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -28,6 +29,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
         return new ViewHolder(view);
     }
 
+    //Bind list data to correct position in View Holder
     @Override
     public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
         String picture = articleList.get(position).getImage();
@@ -39,10 +41,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
         holder.setData(picture,header,time,about,url);
     }
 
+    //Number of News Articles
     @Override
     public int getItemCount() {
         return articleList.size();
     }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
@@ -52,6 +56,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
         private TextView Info;
         private Button ArticleButton;
 
+        //Retrieve layout items Constructor
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -63,15 +68,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
         }
 
+        //Update View Holder layout with current Article
         public void setData(String picture, String header, String time, String about, String url) {
             Glide.with(itemView.getContext()).load(picture).into(Image);
             Title.setText(header);
             Date.setText(time);
             Info.setText(about);
             ArticleButton.setOnClickListener(new View.OnClickListener() {
+                //Open the Article URL in browser
                 @Override
                 public void onClick(View v) {
-                    // Open the URL in a browser window
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     v.getContext().startActivity(intent);
                 }

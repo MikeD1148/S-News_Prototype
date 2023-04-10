@@ -7,6 +7,7 @@
     android:layout_height="wrap_content"
     style="@style/BACKGROUND">
 
+    <!-- Design for Article Image -->
     <androidx.cardview.widget.CardView
         android:id="@+id/FirstImage"
         android:layout_width="100dp"
@@ -19,6 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!-- Article Image -->
         <ImageView
             android:id="@+id/Image"
             android:layout_width="match_parent"
@@ -27,6 +29,7 @@
 
     </androidx.cardview.widget.CardView>
 
+    <!-- Article Title formatted to wrap to next line -->
     <TextView
         android:id="@+id/Title"
         style="@style/TEXT"
@@ -45,6 +48,7 @@
         app:layout_constraintTop_toTopOf="@id/FirstImage"
         app:layout_constraintWidth_max="0dp" />
 
+    <!-- Article Date -->
     <TextView
         android:id="@+id/Date"
         style="@style/TEXT"
@@ -58,6 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/FirstImage" />
 
+    <!-- Article Classification -->
     <TextView
         android:id="@+id/Info"
         android:layout_width="wrap_content"
@@ -73,6 +78,7 @@
         app:layout_constraintStart_toEndOf="@id/FirstImage"
         app:layout_constraintTop_toBottomOf="@id/Title" />
 
+    <!-- Clickable Button to direct to Article Webpage -->
     <Button
         android:id="@+id/ArticleButton"
         android:layout_width="411dp"
@@ -84,6 +90,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@android:color/transparent"/>
 
+    <!-- Division Line to differentiate Articles -->
     <View
         android:layout_width="wrap_content"
         android:layout_height="1dp"

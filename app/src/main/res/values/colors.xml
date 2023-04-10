@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Colours used in Apps UI -->
     <color name="grey">#353941</color>
     <color name="light_black">#26282B</color>
     <color name="off_blue">#5F85DB</color>

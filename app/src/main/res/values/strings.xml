@@ -1,13 +1,3 @@
 <resources>
     <string name="app_name">S-News</string>
-    <string name="Article_1">Article 1</string>
-    <string name="Article_2">Article 2</string>
-    <string name="Article_3">Article 3</string>
-    <string name="Article_4">Article 4</string>
-    <string name="Article_5">Article 5</string>
-    <string name="Article_6">Article 6</string>
-    <string name="Article_7">Article 7</string>
-    <string name="Article_8">Article 8</string>
-    <string name="Article_9">Article 9</string>
-    <string name="Article_10">Article 10</string>
 </resources>

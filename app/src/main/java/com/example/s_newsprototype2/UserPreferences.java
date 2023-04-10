@@ -1,10 +1,7 @@
 package com.example.s_newsprototype2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
@@ -15,33 +12,29 @@ public class UserPreferences extends MenuConstant {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_preferences);
 
-        initSwitch(R.id.Grumpy, "grumpyValue");
-        initSwitch(R.id.Happy, "happyValue");
-        initSwitch(R.id.Glad, "gladValue");
-        initSwitch(R.id.Mad, "madValue");
-        initSwitch(R.id.Nosey, "noseyValue");
-        initSwitch(R.id.Joy, "joyValue");
-        initSwitch(R.id.Bashful, "bashfulValue");
-        initSwitch(R.id.Smurf, "smurfValue");
-        initSwitch(R.id.Horror, "horrorValue");
-        initSwitch(R.id.Confusion, "confusionValue");
-        initSwitch(R.id.Relief, "reliefValue");
-        initSwitch(R.id.Fear, "fearValue");
-        initSwitch(R.id.Awe, "aweValue");
-        initSwitch(R.id.Pain, "painValue");
-
+        //Initialise the Switch for each Category
+        makeSwitch(R.id.Inspirational, "inspirationValue");
+        makeSwitch(R.id.Controversial, "controversyValue");
+        makeSwitch(R.id.Provoking, "provokeValue");
+        makeSwitch(R.id.Amusing, "amuseValue");
+        makeSwitch(R.id.Sad, "sadValue");
+        makeSwitch(R.id.Informative, "informationValue");
     }
 
-    private void initSwitch(int switchID, String switchEmotion) {
-        Switch switchLoop = findViewById(switchID);
+    private void makeSwitch(int switchID, String switchCategory) {
+        //Get specific Switch
+        Switch currentSwitch = findViewById(switchID);
+        //Load the Switches saved state from SharedPreferences
         SharedPreferences sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
-        switchLoop.setChecked(sharedPreferences.getBoolean(switchEmotion, false));
+        //Set value of Switch to value stored in SharedPreferences if no value set false
+        currentSwitch.setChecked(sharedPreferences.getBoolean(switchCategory, false));
 
-        switchLoop.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        //Changes the value of the Switch in SharedPreferences if the value of the Switch is changed by the User
+        currentSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            public void onCheckedChanged(CompoundButton buttonView, boolean toggled) {
                 SharedPreferences.Editor editor = getSharedPreferences("save", MODE_PRIVATE).edit();
-                editor.putBoolean(switchEmotion, isChecked);
+                editor.putBoolean(switchCategory, toggled);
                 editor.apply();
             }
         });

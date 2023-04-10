@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     style="@style/BACKGROUND" >
 
+    <!-- Main UI Page declares recycled view which is styled in item_design  -->
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

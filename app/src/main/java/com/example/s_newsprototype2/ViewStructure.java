@@ -8,6 +8,7 @@ public class ViewStructure {
     private  String Info;
     private String ArticleButton;
 
+    //View Constructor to hold Article Data
     ViewStructure(String Image, String Title, String Date, String Info, String ArticleButton)
     {
         this.Image=Image;
@@ -16,6 +17,8 @@ public class ViewStructure {
         this.Info=Info;
         this.ArticleButton=ArticleButton;
     }
+
+    //Getters for item data
     public String getImage() {
         return Image;
     }
