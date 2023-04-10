@@ -51,7 +51,7 @@ public class MenuConstant extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.refresh:
                 //Make connection to server and retrieve up to date news articles
-                NetworkConnection newConnection = new NetworkConnection("6.tcp.eu.ngrok.io", 10827, this);
+                NetworkConnection newConnection = new NetworkConnection("localhost", 9999, this);
                 newConnection.start();
             case R.id.home:
                 //End Current Activity and Open Main Activity
